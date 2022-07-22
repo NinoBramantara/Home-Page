@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Nino Bramantara</title>
+    <link rel="stylesheet" href="style.css">
+    <!--================================ TABS ICON ================================-->
+    <link rel="shortcut icon" href="../media/image/icon/favicon.ico">
+    <!--================================ FONT ================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--================================ UNIQUE CHARACTER ================================-->
+    <script src="https://kit.fontawesome.com/41b9344197.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="section__1">
+        <main>
+            <div class="container">
+                <div class="header">
+                    <a href="../index.html"><img src="../media/image/icon/Nino-removebg-preview.png" alt="logo"></a>
+                    <div class="navLinks" id="navLink">
+                        <nav class="navigation">
+                            <i class="fa fa-times" onclick="navExit()"></i>
+                            <ul>
+                                <a href="../index.html"><li>Home</li></a>
+                                <a href="../photos/index.html"><li>Photos</li></a>
+                                <a href="index.html"><li>About</li></a>
+                                <a href="../contact/index.html"><li class="contact2">Contact</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="hero-contact">
+                        <a href="../contact/index.html" class="button_link"><button>Contact</button></a>
+                    </div>
+                    <div class="menu-icon">
+                        <i class="fa fa-bars" onclick="navMenu()"></i> 
+                    </div>
+                </div>
+                
+            
+                <div class="content">
+                    <div class="profile">
+                        <div class="profile__social">
+                            <ul>
+                                <a href="https://www.instagram.com/ninobramantara/"><li class="instagram"><img src="../media/image/icon/social media/instagram.png" alt=""></li></a>
+                                <a href="https://discordapp.com/users/331074387597983744/"><li class="discord"><img src="../media/image/icon/social media/discord.png" alt=""></li></a>
+                                <a href="https://wa.me/qr/4XK6TKVTEOFGE1"><li class="whatsapp"><img src="../media/image/icon/social media/whatsapp.png" alt=""></li></a>
+                            </ul>
+                        </div>
+                        <div class="profile__picture"><img src="../media/image/photo profile2.jpg" alt="Photo Profile"></div>
+                        <div class="profile__story">
+                            <h1>About me</h1>
+                            <p><span>Hello</span>, glad to see you <i class="fa-regular fa-heart"></i>. My name is Endrino Surya Bramantara aka Nino Bramantara. Usually i just called Nino. Now iam studying at SMP Negeri 1 Muntilan. Iam not a smart student, maybe efect from the pandemic make me lazy :v. So far, i was learning HTML, CSS, and a little bit of Javascript and Python language. Sometimes i trapped in the Tutorial hell, so hard to escape from it. Thank you for visitting this useless website <i class="fa-regular fa-face-grin-beam-sweat"></i>. see you again next time <3 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="footer">
+        <div class="footer-col">
+            <div class="col1">
+                <h2>Thanks for Visiting</h2>
+                <p> Made with <i class="fa-regular fa-heart"></i> </i> and <i class="fa-solid fa-fire"></i> in Muntilan district, Magelang regency, Central Java province, Indonesia </p>
+                <ul>
+                    <a href="https://www.instagram.com/ninobramantara/">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </a><a href="https://discordapp.com/users/331074387597983744/">
+                        <li><i class="fa-brands fa-discord"></i></li>
+                    </a>
+                    <a href="https://wa.me/qr/4XK6TKVTEOFGE1">
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                    </a>
+                </ul>
+            </div>
+            
+            <div class="col2">
+                <h3>Usefull Links</h3>
+                <a href="../index.html">Home</a>
+                <a href="../photos/index.html">Photos</a>
+                <a href="../contact/index.html">Contact</a>
+            </div>
+        </div>
+    </section>
+     <!--========================= JAVASCRIPT TOOGLE THE NAV BAR ===========================-->
+    <script>
+        navLinks = document.getElementById('navLink');
+        function navExit(){
+            navLinks.style.right = '-200px';
+        }
+        function navMenu(){
+            navLinks.style.right = 0;
+        }
+    </script>
+</body>
+</html>

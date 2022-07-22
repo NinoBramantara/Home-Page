@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Nino Bramantara</title>
+    <link rel="stylesheet" href="style.css">
+    <!--================================ TABS ICON ================================-->
+    <link rel="shortcut icon" href="../media/image/icon/favicon.ico">
+    <!--================================ FONT ================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--================================ UNIQUE CHARACTER ================================-->
+    <script src="https://kit.fontawesome.com/41b9344197.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="section__1">
+        <main>
+            <div class="container">
+                <div class="header">
+                    <a href="../index.html"><img src="../media/image/icon/Nino-removebg-preview.png" alt="logo"></a>
+                    <div class="navLinks" id="navLink">
+                        <nav class="navigation">
+                            <i class="fa fa-times" onclick="navExit()"></i>
+                            <ul>
+                                <a href="../index.html"><li>Home</li></a>
+                                <a href="../photos/index.html"><li>Photos</li></a>
+                                <a href="../about/index.html"><li>About</li></a>
+                                <a href="index.html"><li class="contact2">Contact</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="hero-contact">
+                        <a href="index.html" class="button_link"><button>Contact</button></a>
+                    </div>
+                    <div class="menu-icon">
+                        <i class="fa fa-bars" onclick="navMenu()"></i> 
+                    </div>
+                </div>
+                
+            
+                <div class="content">
+                    <div class="contact">
+                        <h1>What do you think about <br>this website?</h1>
+                        <div class="contact-box">
+                            <form action="POST"
+                            data-netlify="true">
+                                <div class="rate" name="rating">
+                                    <input type="radio" name="Ratings" id="rate5" value="1/5">
+                                    <label for="rate5" class="fa fa-star"></label>
+                                    
+                                    <input type="radio" name="Ratings" id="rate4" value="2/5">
+                                    <label for="rate4" class="fa fa-star"></label>
+
+                                    <input type="radio" name="Ratings" id="rate3" value="3/5">
+                                    <label for="rate3" class="fa fa-star"></label>
+                                    
+                                    <input type="radio" name="Ratings" id="rate2" value="4/5">
+                                    <label for="rate2" class="fa fa-star"></label>
+                                    
+                                    <input type="radio" name="Ratings" id="rate1" value="5/5">
+                                    <label for="rate1" class="fa fa-star"></label>
+                                </div>
+                                <div class="clear"></div>
+                                <div class="name">
+                                    <textarea name="Name" id="name" cols="30" rows="1" placeholder="Your name? :3"></textarea>
+                                </div>
+                                <div class="text" name="Opinion">
+                                    <textarea name="Opinion" id="textarea" cols="30" rows="10" placeholder="Type your opinion here..."></textarea>
+                                </div>
+                                <div class="btn">
+                                    <button type="submit">Submit</button>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+    <section class="footer">
+        <div class="footer-col">
+            <div class="col1">
+                <h2>Thanks for Visiting</h2>
+                <p> Made with <i class="fa-regular fa-heart"></i> </i> and <i class="fa-solid fa-fire"></i> in Muntilan district, Magelang regency, Central Java province, Indonesia </p>
+                <ul>
+                    <a href="https://www.instagram.com/ninobramantara/">
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                    </a><a href="https://discordapp.com/users/331074387597983744/">
+                        <li><i class="fa-brands fa-discord"></i></li>
+                    </a>
+                    <a href="https://wa.me/qr/4XK6TKVTEOFGE1">
+                        <li><i class="fa-brands fa-whatsapp"></i></li>
+                    </a>
+                </ul>
+            </div>
+            
+            <div class="col2">
+                <h3>Usefull Links</h3>
+                <a href="../index.html">Home</a>
+                <a href="../photos/index.html">Photos</a>
+                <a href="../about/index.html">About</a>
+            </div>
+        </div>
+    </section>
+     <!--========================= JAVASCRIPT TOOGLE THE NAV BAR ===========================-->
+    <script>
+        navLinks = document.getElementById('navLink');
+        function navExit(){
+            navLinks.style.right = '-200px';
+        }
+        function navMenu(){
+            navLinks.style.right = 0;
+        }
+        
+    </script>
+</body>
+</html>
